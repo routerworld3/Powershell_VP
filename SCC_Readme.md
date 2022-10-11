@@ -6,9 +6,9 @@ Copy-Item \\IP\Share\scc-5.5_Windows_bundle.zip -Destination $TempDirectory\scc-
 # Extract Archive to the Directory
 Expand-Archive -Path $TempDirectory\scc-5.5_Windows_bundle.zip -DestinationPath $TempDirectory -Force
 # Install SCC with default options silently with no GUI shown
-# SCC_5.5_Windows_Setup.exe /VERYSILENT
+#SCC_5.5_Windows_Setup.exe /VERYSILENT
 # Install SCC to a given directory with default options silently with no GUI shown
-# SCC_5.5_Windows_Setup.exe /VERYSILENT /DIR="C:\SCC"
+#SCC_5.5_Windows_Setup.exe /VERYSILENT /DIR="C:\SCC"
 $filepath = "C:\SCC\scc-5.5_Windows_bundle\scc-5.5_Windows"
 cd $filepath
 .\SCC_5.5_Windows_Setup.exe /VERYSILENT
