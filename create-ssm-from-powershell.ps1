@@ -66,8 +66,8 @@ function Convert-PSScriptToSSM ($sourceScript, $targetScript, $description, $tim
 
 }
 
-$src = "C:\Temp\Script.ps1"
-$target = "C:\Temp\Script.json"
+$src = Read-Host -Prompt 'PowerShell Scripts that Need to Convert to Json SSM Document'
+$target = "$PSScriptRoot\$src.json"
 
 $desc = "Script description here"
 $timeOut = "7200"
